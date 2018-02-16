@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQ Mobile</title>
+
+	<!-- Custom CSS -->
+	<style>
+		#header2 {
+			text-align: center;
+		}
+		#outConversion {
+			text-align: center;
+		}
+	</style>
+
+	<!--jQuery Mobile Theme -->
+	<link rel="stylesheet" href="jq-theme/Dark-Yellow.min.css" />
+	<link rel="stylesheet" href="jq-theme/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<!-- Mobile Friendly -->
+	<link rel="apple-touch-icon" href="images/icon.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Custom Javascript -->
+	<script>
+		function calcFeetInches()
+		{
+			var meters = parseInt($("#txtMeters").val());
+			var centiM = parseInt($("#txtCentiM").val());
+
+			var feet = (meters * 3.28084).toFixed(2);
+			var inches = (centiM * 0.393701).toFixed(2);
+
+			var height = (feet + (inches / 12));
+
+			$("#outConversion").html("You now have " + feet + " feet and " + inches + " inches!");
+		} //end calcFeetInches
+	</script>
+
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header" data-position="inline" id = "header2">
+		<h1>Unit Converter!</h1>
+		<p>Type in the following measurements and it will be converted to feet and inches:</p>
+	</div>
+	<div data-role="content">
+		<form>
+			<fieldset>
+				<label>Meters (m)</label>
+				<input type="text"
+					   id="txtMeters"
+					   value="23"/>
+				<br>
+				<label>Centimeters (cm)</label>
+				<input type="text"
+					   id="txtCentiM"
+					   value="8"/>
+				<br>
+				<button type = "button"
+						onclick = "calcFeetInches()">
+					CONVERT!
+				</button>
+
+			<br><br>
+
+				<label id="outConversion">YOUR CONVERSION WILL MAGICALLY APPEAR HERE</label>
+				
+			</fieldset>
+		</form>
+	</div>
+</div>
+</body>
+</html>
