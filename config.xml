@@ -8,6 +8,9 @@
 		<name>Simple Converter		</name>
 		<description>N300 course project		</description>
 		<author href="http://bit.do.sch3p" email="noah.schepers@gmail.com">Noah Schepers		</author>
+		
+		<preference name="phonegap-version" value="6.3.0" />
+		
 		<feature name="http://api.phonegap.com/1.0/network" />
 		<feature name="http://api.phonegap.com/1.0/notification" />
 		<preference name="phonegap-version" value="cli-6.3.0" />
