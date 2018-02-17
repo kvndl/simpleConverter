@@ -18,6 +18,8 @@
 
     <preference name="permissions"                value="none"/>
 	
+    <plugin name="cordova-plugin-inappbrowser" />
+	
     <preference name="phonegap-version"       value="cli-6.5.0" />
 
     <icon src="icon.png" />
