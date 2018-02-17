@@ -44,11 +44,11 @@
 		<platform name="ios">
 		</platform>
 		<platform name="android">
-		<icon src="file://C:\Users\Noah\Downloads\ic_launcher\res\mipmap-mdpi\ic_launcher.png" qualifier="mdpi" />
-		<icon src="file://C:\Users\Noah\Downloads\ic_launcher\res\mipmap-hdpi\ic_launcher.png" qualifier="hdpi" />
-		<icon src="file://C:\Users\Noah\Downloads\ic_launcher\res\mipmap-xhdpi\ic_launcher.png" qualifier="xhdpi" />
-		<icon src="file://C:\Users\Noah\Downloads\ic_launcher\res\mipmap-xxhdpi\ic_launcher.png" qualifier="xxhdpi" />
-		<icon src="file://C:\Users\Noah\Downloads\ic_launcher\res\mipmap-xxxhdpi\ic_launcher.png" qualifier="xxxhdpi" />
+		<icon src="images\res\mipmap-mdpi\ic_launcher.png" qualifier="mdpi" />
+		<icon src="images\res\mipmap-hdpi\ic_launcher.png" qualifier="hdpi" />
+		<icon src="images\res\mipmap-xhdpi\ic_launcher.png" qualifier="xhdpi" />
+		<icon src="images\res\mipmap-xxhdpi\ic_launcher.png" qualifier="xxhdpi" />
+		<icon src="images\res\mipmap-xxxhdpi\ic_launcher.png" qualifier="xxxhdpi" />
 		</platform>
 		<platform name="winphone">
 		</platform>
